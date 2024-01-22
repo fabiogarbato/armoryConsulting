@@ -132,6 +132,21 @@ function App() {
                     </div>
                 </Col>
             </Row>
+            <Container className='background-space'></Container>
+            <Row className='h-100 d-flex justify-content-center align-items-center'>
+                <Col xs={12} lg={6} className='d-flex justify-content-center align-items-center' data-aos='fade-left'>
+                    <span className='text-before' style={{ color: '#ff7300' }}>ONDE ATUAMOS E NOSSAS PARCERIAS</span>
+                </Col>
+            </Row>
+            <Row className='h-100 d-flex justify-content-center align-items-center'>
+                <Col xs={12} lg={6} className='d-flex justify-content-center align-items-center'> 
+                    <div className='d-flex align-items-start flex-grow-1'>
+                        <p className='text-description' style={{ color: 'black' }} data-aos='fade-left'>
+                        Atualmente exercemos nossos cursos exclusivamente em clubes de tiro. Curitiba e região metropolitana. Firmamos parcerias com despachantes, instrutores, estandes e armeiros credenciados. Isso garante que o profissional contratado esteja em conformidade com as normas e exigências da Polícia Federal e do Exército. A parceria com as lojas de armas e materiais táticos, fornece um vasto acervo para apresentarmos aos nossos clientes, diversos tipos de armas nacionais e importadas.
+                        </p>
+                    </div>
+                </Col>
+            </Row>
         </Container>
         <Container id='cardapio' className='background-space'></Container>
         <Container id='cardapio' className='text-first background-cardapio' style={{ color: '#f5ddba' }} data-aos='fade-down'>Nossos Cursos</Container>
@@ -165,18 +180,18 @@ function App() {
                 </Table>
             </div>
     </Container>
-    <Container className=' d-flex justify-content-center align-items-center' style={{ minHeight: '10vh' }}>
+    <Container className='background-button d-flex justify-content-center align-items-center' style={{ minHeight: '10vh' }}>
       <Button
         style={{
             backgroundColor: '#ff8c00',
-            borderColor: 'white',
+            borderColor: 'black',
             borderRadius: '50px',
             boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
             fontSize: '20px', 
             padding: '15px 30px', 
             minWidth: '200px', 
         }}
-      className = 'custom-btn'
+      className = 'rounded-pill custom-btn'
       data-aos='fade-up'
       >
         Conheça Nossa Estrutura
@@ -313,7 +328,7 @@ function App() {
             </Row>
         </Container>
         <Container id='localizacao' className='background-space'></Container>
-        <Container id='cardapio' className='text-first background-cardapio' style={{ color: '#f5ddba' }}>Faça-nos uma visita!</Container>
+        <Container id='cardapio' className='text-first background-cardapio' style={{ color: '#f5ddba' }}>Parceiros</Container>
         <Container className='background-maps'>
             <iframe
                 title="Google Maps"
