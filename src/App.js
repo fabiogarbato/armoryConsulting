@@ -44,49 +44,90 @@ function App() {
             </Navbar.Collapse>
         </Navbar>
         <Container className='background-space'></Container>
-        <Container fluid className="background-section">
-            <Carousel indicators={false} controls={false}>
-                <Carousel.Item style={{ width: '100%', height: '70vh' }}>
+        <Container className='background-section2'>
+            <Row className="mb-3">
+                <Col xs={12} md={4} style={{ padding: 0, backgroundColor: 'purple', height: '40vh'}}>
                     <Image
-                        className="d-block"
+                        className="d-block move"
                         src={Arma2}
                         alt="Primeiro slide"
                         style={{
                         width: '100%',        
-                        height: '70vh',       
+                        height: '40vh',       
                         objectFit: 'cover', 
                         objectPosition: 'center center' 
                         }}
                     />
-                </Carousel.Item>
-                <Carousel.Item style={{ width: '100%', height: '70vh' }}>
+                </Col>
+                <Col xs={12} md={4} style={{ padding: 0, backgroundColor: 'white', height: '40vh'}}>
                     <Image
-                        className="d-block"
+                        className="d-block move"
                         src={Arma2}
                         alt="Primeiro slide"
                         style={{
                         width: '100%',        
-                        height: '70vh',       
+                        height: '40vh',       
                         objectFit: 'cover', 
                         objectPosition: 'center center' 
                         }}
                     />
-                </Carousel.Item>
-                <Carousel.Item style={{ width: '100%', height: '70vh' }}>
+                </Col>
+                <Col xs={12} md={4} style={{ padding: 0, backgroundColor: 'grey', height: '40vh'}}>
                     <Image
-                        className="d-block"
+                        className="d-block move"
                         src={Arma2}
                         alt="Primeiro slide"
                         style={{
                         width: '100%',        
-                        height: '70vh',       
+                        height: '40vh',       
                         objectFit: 'cover', 
                         objectPosition: 'center center' 
                         }}
                     />
-                </Carousel.Item>
-            </Carousel>
-        </Container>
+                </Col>
+            </Row>
+            <Row>
+                <Col xs={12} md={4} style={{ padding: 0, backgroundColor: 'pink', height: '40vh'}}>
+                    <Image
+                        className="d-block move"
+                        src={Arma2}
+                        alt="Primeiro slide"
+                        style={{
+                        width: '100%',        
+                        height: '40vh',       
+                        objectFit: 'cover', 
+                        objectPosition: 'center center' 
+                        }}
+                    />           
+                </Col>
+                <Col xs={12} md={4} style={{ padding: 0, backgroundColor: 'blue', height: '40vh'}}>
+                    <Image
+                        className="d-block move"
+                        src={Arma2}
+                        alt="Primeiro slide"
+                        style={{
+                        width: '100%',        
+                        height: '40vh',       
+                        objectFit: 'cover', 
+                        objectPosition: 'center center' 
+                        }}
+                    />
+                </Col>
+                <Col xs={12} md={4} style={{ padding: 0, backgroundColor: 'orange', height: '40vh'}}>
+                    <Image
+                        className="d-block move"
+                        src={Arma2}
+                        alt="Primeiro slide"
+                        style={{
+                        width: '100%',        
+                        height: '40vh',       
+                        objectFit: 'cover', 
+                        objectPosition: 'center center' 
+                        }}
+                    />
+                </Col>
+            </Row>
+        </Container> 
         <Container id='sobre' className='background-space'></Container>
         <Container className='background-section2'>
             <Row className='h-100 d-flex justify-content-center align-items-center'>
