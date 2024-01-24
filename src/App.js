@@ -4,7 +4,7 @@ import {Container, Carousel, Row, Col, Image, Table, Button}  from 'react-bootst
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import React, { useEffect } from 'react';
+import React from 'react';
 import { FaWhatsapp } from 'react-icons/fa';
 import logo from './images/logo.png';
 import Arma2 from './images/arma2.jpg';
@@ -15,6 +15,7 @@ import Arma2 from './images/arma2.jpg';
 // import Hb3 from './images/hb3.jpg';
 import Face from './images/face.png';
 import Insta from './images/insta.png';
+import WithAnimation from './WithAnimation';
 
 const WhatsAppButton = ({ phoneNumber }) => {
     const whatsappLink = `https://wa.me/55${phoneNumber}?text=Adorei%20seu%20artigo`;
@@ -25,7 +26,7 @@ const WhatsAppButton = ({ phoneNumber }) => {
     );
   };
 
-function App() {  
+const App = () => {  
 
   return (
     <Container fluid style={{ backgroundColor: '#2b2928', minHeight: '100vh' }}>
@@ -131,54 +132,68 @@ function App() {
         <Container id='sobre' className='background-space'></Container>
         <Container className='background-section2'>
             <Row className='h-100 d-flex justify-content-center align-items-center'>
-                <Col className='d-flex justify-content-center align-items-center'>
-                    <span className='text-first' style={{ color: '#ff7300' }}>Sobre Nós</span>
-                </Col>
+                <WithAnimation>
+                    <Col className='d-flex justify-content-center align-items-center'>
+                        <span className='text-first'>Sobre Nós</span>
+                    </Col>
+                </WithAnimation>
             </Row>
             <Container className='background-space'></Container>
             <Row className='h-100 d-flex justify-content-center align-items-center'>
-                <Col xs={12} lg={6} className='d-flex justify-content-center align-items-center'>
-                    <span className='text-before' style={{ color: '#ff7300' }}>UMA BREVE APRESENTAÇÃO</span>
-                </Col>
+                <WithAnimation>
+                    <Col xs={12} lg={6} className='d-flex justify-content-center align-items-center'>
+                        <span className='text-before' style={{ color: '#ff7300' }}>UMA BREVE APRESENTAÇÃO</span>
+                    </Col>
+                </WithAnimation>
             </Row>
             <Row className='h-100 d-flex justify-content-center align-items-center'>
-                <Col xs={12} lg={6} className='d-flex justify-content-center align-items-center'> 
-                    <div className='d-flex align-items-start flex-grow-1'>
-                        <p className='text-description' style={{ color: 'black' }}>
-                            Somos uma empresa de consultoria e treinamento. Nosso principal foco é capacitar clientes com a nossa expertise. Compartilhar experiências e principalmente ensinar nossas técnicas do nível básico ao avançado.
-                        </p>
-                    </div>
-                </Col>
-            </Row>
-            <Container className='background-space'></Container>
-            <Row className='h-100 d-flex justify-content-center align-items-center'>
-                <Col xs={12} lg={6} className='d-flex justify-content-center align-items-center'>
-                    <span className='text-before' style={{ color: '#ff7300' }}>MUITA PESQUISA E PROFISSIONALISMO</span>
-                </Col>
-            </Row>
-            <Row className='h-100 d-flex justify-content-center align-items-center'>
-                <Col xs={12} lg={6} className='d-flex justify-content-center align-items-center'> 
-                    <div className='d-flex align-items-start flex-grow-1'>
-                        <p className='text-description' style={{ color: 'black' }}>
-                            O cidadão brasileiro é prejudicado reiteradamente com informações desencontradas no quesito arma de fogo. Por esta razão, criamos um projeto inovador ao realizar um levantamento mais assertivo. Com uma base sólida de conhecimento, a Armory Consulting foi criada para promover consultoria, cursos e treinamento no crescente mercado nacional de armas.
-                        </p>
-                    </div>
-                </Col>
+                <WithAnimation>
+                    <Col xs={12} lg={6} className='d-flex justify-content-center align-items-center'> 
+                        <div className='d-flex align-items-start flex-grow-1'>
+                            <p className='text-description' style={{ color: 'black' }}>
+                                Somos uma empresa de consultoria e treinamento. Nosso principal foco é capacitar clientes com a nossa expertise. Compartilhar experiências e principalmente ensinar nossas técnicas do nível básico ao avançado.
+                            </p>
+                        </div>
+                    </Col>
+                </WithAnimation>
             </Row>
             <Container className='background-space'></Container>
             <Row className='h-100 d-flex justify-content-center align-items-center'>
-                <Col xs={12} lg={6} className='d-flex justify-content-center align-items-center'>
-                    <span className='text-before' style={{ color: '#ff7300' }}>ONDE ATUAMOS E NOSSAS PARCERIAS</span>
-                </Col>
+                <WithAnimation>
+                    <Col xs={12} lg={6} className='d-flex justify-content-center align-items-center'>
+                        <span className='text-before' style={{ color: '#ff7300' }}>MUITA PESQUISA E PROFISSIONALISMO</span>
+                    </Col>
+                </WithAnimation>
             </Row>
             <Row className='h-100 d-flex justify-content-center align-items-center'>
-                <Col xs={12} lg={6} className='d-flex justify-content-center align-items-center'> 
-                    <div className='d-flex align-items-start flex-grow-1'>
-                        <p className='text-description' style={{ color: 'black' }}>
-                        Atualmente exercemos nossos cursos exclusivamente em clubes de tiro. Curitiba e região metropolitana. Firmamos parcerias com despachantes, instrutores, estandes e armeiros credenciados. Isso garante que o profissional contratado esteja em conformidade com as normas e exigências da Polícia Federal e do Exército. A parceria com as lojas de armas e materiais táticos, fornece um vasto acervo para apresentarmos aos nossos clientes, diversos tipos de armas nacionais e importadas.
-                        </p>
-                    </div>
-                </Col>
+                <WithAnimation>
+                    <Col xs={12} lg={6} className='d-flex justify-content-center align-items-center'> 
+                        <div className='d-flex align-items-start flex-grow-1'>
+                            <p className='text-description' style={{ color: 'black' }}>
+                                O cidadão brasileiro é prejudicado reiteradamente com informações desencontradas no quesito arma de fogo. Por esta razão, criamos um projeto inovador ao realizar um levantamento mais assertivo. Com uma base sólida de conhecimento, a Armory Consulting foi criada para promover consultoria, cursos e treinamento no crescente mercado nacional de armas.
+                            </p>
+                        </div>
+                    </Col>
+                </WithAnimation>
+            </Row>
+            <Container className='background-space'></Container>
+            <Row className='h-100 d-flex justify-content-center align-items-center'>
+                <WithAnimation>
+                    <Col xs={12} lg={6} className='d-flex justify-content-center align-items-center'>
+                        <span className='text-before' style={{ color: '#ff7300' }}>ONDE ATUAMOS E NOSSAS PARCERIAS</span>
+                    </Col>
+                </WithAnimation>
+            </Row>
+            <Row className='h-100 d-flex justify-content-center align-items-center'>
+                <WithAnimation>
+                    <Col xs={12} lg={6} className='d-flex justify-content-center align-items-center'> 
+                        <div className='d-flex align-items-start flex-grow-1'>
+                            <p className='text-description' style={{ color: 'black' }}>
+                                Atualmente exercemos nossos cursos exclusivamente em clubes de tiro. Curitiba e região metropolitana. Firmamos parcerias com despachantes, instrutores, estandes e armeiros credenciados. Isso garante que o profissional contratado esteja em conformidade com as normas e exigências da Polícia Federal e do Exército. A parceria com as lojas de armas e materiais táticos, fornece um vasto acervo para apresentarmos aos nossos clientes, diversos tipos de armas nacionais e importadas.
+                            </p>
+                        </div>
+                    </Col>
+                </WithAnimation>
             </Row>
         </Container>
         <Container id='cardapio' className='background-space'></Container>
