@@ -7,12 +7,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import React from 'react';
 import { FaWhatsapp } from 'react-icons/fa';
 import logo from './images/logo.png';
-import Arma2 from './images/arma2.jpg';
-// import Sanduba2 from './images/sanduba2.jpg';
-// import Tacos from './images/tacos.jpg';
-// import Hb1 from './images/hb1.jpg';
-// import Hb2 from './images/hb2.jpg';
-// import Hb3 from './images/hb3.jpg';
+import OBelico from './images/Obelico.png';
+import Cabana from './images/logo-cabana.png';
 import Face from './images/face.png';
 import Insta from './images/insta.png';
 import WithAnimation from './WithAnimation';
@@ -147,109 +143,25 @@ const App = () => {
                 </div>
             </Container>
         </WithAnimation>
-    <WithAnimation>
-        <Container className='background-button d-flex justify-content-center align-items-center' style={{ minHeight: '10vh' }}>
-        <Button
-            style={{
-                backgroundColor: '#ff8c00',
-                borderColor: 'black',
-                borderRadius: '50px',
-                boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
-                fontSize: '20px', 
-                padding: '15px 30px', 
-                minWidth: '200px', 
-            }}
-        className = 'rounded-pill custom-btn'
-        data-aos='fade-up'
-        >
-            Conheça Nossa Estrutura
-        </Button>
-        </Container>
-    </WithAnimation>
-        {/* <Container className='background-section2'>
-            <Row className="mb-3">
-                <Col xs={12} md={4} style={{ padding: 0, backgroundColor: 'purple', height: '40vh'}}>
-                    <Image
-                        className="d-block move"
-                        src={Sanduba2}
-                        alt="Primeiro slide"
-                        style={{
-                        width: '100%',        
-                        height: '40vh',       
-                        objectFit: 'cover', 
-                        objectPosition: 'center center' 
-                        }}
-                    />
-                </Col>
-                <Col xs={12} md={4} style={{ padding: 0, backgroundColor: 'white', height: '40vh'}}>
-                    <Image
-                        className="d-block move"
-                        src={Sanduba}
-                        alt="Primeiro slide"
-                        style={{
-                        width: '100%',        
-                        height: '40vh',       
-                        objectFit: 'cover', 
-                        objectPosition: 'center center' 
-                        }}
-                    />
-                </Col>
-                <Col xs={12} md={4} style={{ padding: 0, backgroundColor: 'grey', height: '40vh'}}>
-                    <Image
-                        className="d-block move"
-                        src={Hb1}
-                        alt="Primeiro slide"
-                        style={{
-                        width: '100%',        
-                        height: '40vh',       
-                        objectFit: 'cover', 
-                        objectPosition: 'center center' 
-                        }}
-                    />
-                </Col>
-            </Row>
-            <Row>
-                <Col xs={12} md={4} style={{ padding: 0, backgroundColor: 'pink', height: '40vh'}}>
-                    <Image
-                        className="d-block move"
-                        src={Hb2}
-                        alt="Primeiro slide"
-                        style={{
-                        width: '100%',        
-                        height: '40vh',       
-                        objectFit: 'cover', 
-                        objectPosition: 'center center' 
-                        }}
-                    />           
-                </Col>
-                <Col xs={12} md={4} style={{ padding: 0, backgroundColor: 'blue', height: '40vh'}}>
-                    <Image
-                        className="d-block move"
-                        src={Hb3}
-                        alt="Primeiro slide"
-                        style={{
-                        width: '100%',        
-                        height: '40vh',       
-                        objectFit: 'cover', 
-                        objectPosition: 'center center' 
-                        }}
-                    />
-                </Col>
-                <Col xs={12} md={4} style={{ padding: 0, backgroundColor: 'orange', height: '40vh'}}>
-                    <Image
-                        className="d-block move"
-                        src={Sanduba}
-                        alt="Primeiro slide"
-                        style={{
-                        width: '100%',        
-                        height: '40vh',       
-                        objectFit: 'cover', 
-                        objectPosition: 'center center' 
-                        }}
-                    />
-                </Col>
-            </Row>
-        </Container> */}
+        <WithAnimation>
+            <Container className='background-button d-flex justify-content-center align-items-center' style={{ minHeight: '10vh' }}>
+            <Button
+                style={{
+                    backgroundColor: '#ff8c00',
+                    borderColor: 'black',
+                    borderRadius: '50px',
+                    boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
+                    fontSize: '20px', 
+                    padding: '15px 30px', 
+                    minWidth: '200px', 
+                }}
+            className = 'rounded-pill custom-btn'
+            data-aos='fade-up'
+            >
+                Conheça Nossa Estrutura
+            </Button>
+            </Container>
+        </WithAnimation>
         <Container id='contato' className='background-space'></Container>
         <WithAnimation>
             <Container className='background-contact'>
@@ -301,21 +213,55 @@ const App = () => {
             </Container>
         </WithAnimation>
         <Container id='localizacao' className='background-space'></Container>
-        <Container id='cardapio' className='text-first background-cardapio' style={{ color: '#ff7300' }}>Parceiros</Container>
-        <Container className='background-maps'>
-            <iframe
-                title="Google Maps"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.6634855092907!2d-46.5690953239996!3d-23.544602878811403!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5eeb62a33cfd%3A0x4bde5f170256d2d2!2sR.%20Serra%20de%20Japi%2C%20445%20-%20Vila%20Gomes%20Cardim%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%20Brasil!5e0!3m2!1spt-BR!2sus!4v1705361038240!5m2!1spt-BR!2sus"
-                width="100%"
-                height="100%"
-                frameBorder="0"
-                style={{ border: 0 }}
-                allowFullScreen=""
-                aria-hidden="false"
-                tabIndex="0"
-            >
-            </iframe> 
-        </Container>
+        <WithAnimation>
+            <Container className='background-contact'>
+                <Row className='h-100 d-flex justify-content-center align-items-center' /*style={{ backgroundColor: 'pink'}}*/>
+                    <WithAnimation>
+                        <Col className='d-flex justify-content-center align-items-center'>
+                            <span className='text-first' style={{ color: '#ff7300' }}>Parceiros</span>
+                        </Col>
+                    </WithAnimation>
+                </Row>
+                <Row>
+                    <Col xs={12} lg={6} className='d-flex justify-content-center align-items-center flex-column' style={{ /*backgroundColor: 'green',*/ height: '40vh'}}>
+                        <a href="https://obelico.com.br" target="_blank" rel="noopener noreferrer">
+                            <Image
+                                className="d-block zoom-hover"
+                                src={OBelico}
+                                alt="Primeiro slide"
+                                style={{
+                                maxWidth: '100%',     
+                                maxHeight: '70vh',     
+                                objectFit: 'contain', 
+                                objectPosition: 'center center'
+                                }}
+                            />
+                        </a>
+                        <p className='text-before' style={{ color: '#ff7300' }}>
+                            OBelico
+                        </p>
+                    </Col>
+                    <Col xs={12} lg={6} className='d-flex justify-content-center align-items-center flex-column' style={{ /*backgroundColor: 'orange',*/ height: '40vh'}}>
+                        <a href="https://www.cabanadasarmas.com.br" target="_blank" rel="noopener noreferrer">
+                            <Image
+                                className="d-block zoom-hover"
+                                src={Cabana}
+                                alt="Primeiro slide"
+                                style={{
+                                    maxWidth: '100%',     
+                                    maxHeight: '70vh',     
+                                    objectFit: 'contain', 
+                                    objectPosition: 'center center'
+                                }}
+                            />
+                        </a>
+                        <p className='text-before' style={{ color: '#ff7300' }}>
+                            Cabana Das Armas
+                        </p>
+                    </Col>
+                </Row>
+            </Container>
+        </WithAnimation>
         <Container className='background-space'></Container>
         <footer className="bg-black text-light py-3">
             <Container fluid>
