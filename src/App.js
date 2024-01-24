@@ -197,54 +197,60 @@ const App = () => {
             </Row>
         </Container>
         <Container id='cardapio' className='background-space'></Container>
-        <Container id='cardapio' className='text-first background-cardapio' style={{ color: '#ff7300' }}>Nossos Cursos</Container>
-        <Container className="mt-3">
-            <div className="table-responsive">
-                <Table className="custom-table" data-aos='fade-right'>
-                    <thead>
-                        <tr>
-                            <th>Nível</th>
-                            <th>Descrição</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td className="nivel-cell">Básico</td>
-                            <td className="description-cell">Ideal para iniciantes acima de 18 anos, com baixa ou nenhuma experiência com armas de fogo. Optando por esporte ou defesa pessoal.</td>
-                        </tr>
-                        <tr>
-                            <td className="nivel-cell">Intermediário</td>
-                            <td className="description-cell">Para atiradores que já possuem um nível de conhecimento elevado de armas curtas. Querendo aprimorar seu aprendizado no emprego de armas portáteis.</td>
-                        </tr>
-                        <tr>
-                            <td className="nivel-cell">Avançado</td>
-                            <td className="description-cell">Treinamento tático para civil ou forças armadas. Abrangendo destreza, disciplina e técnicas avançadas de armas semi-automáticas e de repetição.</td>
-                        </tr>
-                        <tr>
-                            <td className="nivel-cell">Consultoria</td>
-                            <td className="description-cell">Iniciamos os trâmites no momento do aceite do cliente em adquirir uma arma de fogo, até sua conclusão final. Com seriedade e competência.</td>
-                        </tr>
-                    </tbody>
-                </Table>
-            </div>
-    </Container>
-    <Container className='background-button d-flex justify-content-center align-items-center' style={{ minHeight: '10vh' }}>
-      <Button
-        style={{
-            backgroundColor: '#ff8c00',
-            borderColor: 'black',
-            borderRadius: '50px',
-            boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
-            fontSize: '20px', 
-            padding: '15px 30px', 
-            minWidth: '200px', 
-        }}
-      className = 'rounded-pill custom-btn'
-      data-aos='fade-up'
-      >
-        Conheça Nossa Estrutura
-      </Button>
-    </Container>
+        <WithAnimation>
+            <Container id='cardapio' className='text-first background-cardapio' style={{ color: '#ff7300' }}>Nossos Cursos</Container>
+        </WithAnimation>
+        <WithAnimation>
+            <Container className="mt-3">
+                <div className="table-responsive">
+                    <Table className="custom-table">
+                        <thead>
+                            <tr>
+                                <th>Nível</th>
+                                <th>Descrição</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td className="nivel-cell">Básico</td>
+                                <td className="description-cell">Ideal para iniciantes acima de 18 anos, com baixa ou nenhuma experiência com armas de fogo. Optando por esporte ou defesa pessoal.</td>
+                            </tr>
+                            <tr>
+                                <td className="nivel-cell">Intermediário</td>
+                                <td className="description-cell">Para atiradores que já possuem um nível de conhecimento elevado de armas curtas. Querendo aprimorar seu aprendizado no emprego de armas portáteis.</td>
+                            </tr>
+                            <tr>
+                                <td className="nivel-cell">Avançado</td>
+                                <td className="description-cell">Treinamento tático para civil ou forças armadas. Abrangendo destreza, disciplina e técnicas avançadas de armas semi-automáticas e de repetição.</td>
+                            </tr>
+                            <tr>
+                                <td className="nivel-cell">Consultoria</td>
+                                <td className="description-cell">Iniciamos os trâmites no momento do aceite do cliente em adquirir uma arma de fogo, até sua conclusão final. Com seriedade e competência.</td>
+                            </tr>
+                        </tbody>
+                    </Table>
+                </div>
+            </Container>
+        </WithAnimation>
+    <WithAnimation>
+        <Container className='background-button d-flex justify-content-center align-items-center' style={{ minHeight: '10vh' }}>
+        <Button
+            style={{
+                backgroundColor: '#ff8c00',
+                borderColor: 'black',
+                borderRadius: '50px',
+                boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
+                fontSize: '20px', 
+                padding: '15px 30px', 
+                minWidth: '200px', 
+            }}
+        className = 'rounded-pill custom-btn'
+        data-aos='fade-up'
+        >
+            Conheça Nossa Estrutura
+        </Button>
+        </Container>
+    </WithAnimation>
         {/* <Container className='background-section2'>
             <Row className="mb-3">
                 <Col xs={12} md={4} style={{ padding: 0, backgroundColor: 'purple', height: '40vh'}}>

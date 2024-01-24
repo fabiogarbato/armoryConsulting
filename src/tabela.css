@@ -15,7 +15,7 @@
 .custom-table thead th {
     background-color: #ff8c00; 
     color: white; 
-    border: none; 
+    border: 1px solid #ff8c00; 
     text-align: center;
     padding: 35px 0; 
     font-size: 30px;
@@ -27,7 +27,7 @@
 
 .custom-table td {
     color: white; 
-    border: none; 
+    border: 1px solid #ff8800; 
     vertical-align: middle; 
     padding: 35px; 
     font-size: 22px;
