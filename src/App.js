@@ -5,8 +5,6 @@ import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import React, { useEffect } from 'react';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
 import { FaWhatsapp } from 'react-icons/fa';
 import logo from './images/logo.png';
 import Arma2 from './images/arma2.jpg';
@@ -28,12 +26,6 @@ const WhatsAppButton = ({ phoneNumber }) => {
   };
 
 function App() {  
-
-    useEffect(() => {
-        AOS.init({
-          duration: 1000, // Duração da animação em milissegundos
-        });
-      }, []);
 
   return (
     <Container fluid style={{ backgroundColor: '#2b2928', minHeight: '100vh' }}>
@@ -99,19 +91,19 @@ function App() {
         <Container className='background-section2'>
             <Row className='h-100 d-flex justify-content-center align-items-center'>
                 <Col className='d-flex justify-content-center align-items-center'>
-                    <span className='text-first' style={{ color: '#ff7300' }}data-aos='fade-down'>Sobre Nós</span>
+                    <span className='text-first' style={{ color: '#ff7300' }}>Sobre Nós</span>
                 </Col>
             </Row>
             <Container className='background-space'></Container>
             <Row className='h-100 d-flex justify-content-center align-items-center'>
                 <Col xs={12} lg={6} className='d-flex justify-content-center align-items-center'>
-                    <span className='text-before' style={{ color: '#ff7300' }} data-aos='fade-right'>UMA BREVE APRESENTAÇÃO</span>
+                    <span className='text-before' style={{ color: '#ff7300' }}>UMA BREVE APRESENTAÇÃO</span>
                 </Col>
             </Row>
             <Row className='h-100 d-flex justify-content-center align-items-center'>
                 <Col xs={12} lg={6} className='d-flex justify-content-center align-items-center'> 
                     <div className='d-flex align-items-start flex-grow-1'>
-                        <p className='text-description' style={{ color: 'black' }} data-aos='fade-right'>
+                        <p className='text-description' style={{ color: 'black' }}>
                             Somos uma empresa de consultoria e treinamento. Nosso principal foco é capacitar clientes com a nossa expertise. Compartilhar experiências e principalmente ensinar nossas técnicas do nível básico ao avançado.
                         </p>
                     </div>
@@ -119,14 +111,14 @@ function App() {
             </Row>
             <Container className='background-space'></Container>
             <Row className='h-100 d-flex justify-content-center align-items-center'>
-                <Col xs={12} lg={6} className='d-flex justify-content-center align-items-center' data-aos='fade-left'>
+                <Col xs={12} lg={6} className='d-flex justify-content-center align-items-center'>
                     <span className='text-before' style={{ color: '#ff7300' }}>MUITA PESQUISA E PROFISSIONALISMO</span>
                 </Col>
             </Row>
             <Row className='h-100 d-flex justify-content-center align-items-center'>
                 <Col xs={12} lg={6} className='d-flex justify-content-center align-items-center'> 
                     <div className='d-flex align-items-start flex-grow-1'>
-                        <p className='text-description' style={{ color: 'black' }} data-aos='fade-left'>
+                        <p className='text-description' style={{ color: 'black' }}>
                             O cidadão brasileiro é prejudicado reiteradamente com informações desencontradas no quesito arma de fogo. Por esta razão, criamos um projeto inovador ao realizar um levantamento mais assertivo. Com uma base sólida de conhecimento, a Armory Consulting foi criada para promover consultoria, cursos e treinamento no crescente mercado nacional de armas.
                         </p>
                     </div>
@@ -134,14 +126,14 @@ function App() {
             </Row>
             <Container className='background-space'></Container>
             <Row className='h-100 d-flex justify-content-center align-items-center'>
-                <Col xs={12} lg={6} className='d-flex justify-content-center align-items-center' data-aos='fade-left'>
+                <Col xs={12} lg={6} className='d-flex justify-content-center align-items-center'>
                     <span className='text-before' style={{ color: '#ff7300' }}>ONDE ATUAMOS E NOSSAS PARCERIAS</span>
                 </Col>
             </Row>
             <Row className='h-100 d-flex justify-content-center align-items-center'>
                 <Col xs={12} lg={6} className='d-flex justify-content-center align-items-center'> 
                     <div className='d-flex align-items-start flex-grow-1'>
-                        <p className='text-description' style={{ color: 'black' }} data-aos='fade-left'>
+                        <p className='text-description' style={{ color: 'black' }}>
                         Atualmente exercemos nossos cursos exclusivamente em clubes de tiro. Curitiba e região metropolitana. Firmamos parcerias com despachantes, instrutores, estandes e armeiros credenciados. Isso garante que o profissional contratado esteja em conformidade com as normas e exigências da Polícia Federal e do Exército. A parceria com as lojas de armas e materiais táticos, fornece um vasto acervo para apresentarmos aos nossos clientes, diversos tipos de armas nacionais e importadas.
                         </p>
                     </div>
@@ -149,7 +141,7 @@ function App() {
             </Row>
         </Container>
         <Container id='cardapio' className='background-space'></Container>
-        <Container id='cardapio' className='text-first background-cardapio' style={{ color: '#f5ddba' }} data-aos='fade-down'>Nossos Cursos</Container>
+        <Container id='cardapio' className='text-first background-cardapio' style={{ color: '#ff7300' }}>Nossos Cursos</Container>
         <Container className="mt-3">
             <div className="table-responsive">
                 <Table className="custom-table" data-aos='fade-right'>
@@ -290,7 +282,7 @@ function App() {
             </Row>
             <Row>
                 <Col xs={12} lg={6} className='d-flex justify-content-center align-items-center flex-column' style={{ /*backgroundColor: 'green',*/ height: '40vh'}}>
-                    <a href="https://www.facebook.com/?locale=pt_BR" target="_blank" rel="noopener noreferrer">
+                    <a href="https://www.facebook.com/armoryconsulting/" target="_blank" rel="noopener noreferrer">
                         <Image
                             className="d-block zoom-hover"
                             src={Face}
@@ -304,11 +296,11 @@ function App() {
                         />
                     </a>
                     <p className='text-before' style={{ color: '#f5ddba' }}>
-                        BurguerMais
+                        Armory Consulting
                     </p>
                 </Col>
                 <Col xs={12} lg={6} className='d-flex justify-content-center align-items-center flex-column' style={{ /*backgroundColor: 'orange',*/ height: '40vh'}}>
-                    <a href="https://www.instagram.com/garbato.fabio/" target="_blank" rel="noopener noreferrer">
+                    <a href="https://www.instagram.com/armoryconsulting/" target="_blank" rel="noopener noreferrer">
                         <Image
                             className="d-block zoom-hover"
                             src={Insta}
@@ -322,7 +314,7 @@ function App() {
                         />
                     </a>
                     <p className='text-before' style={{ color: '#f5ddba' }}>
-                        @burguerMais
+                        @armoryconsulting
                     </p>
                 </Col>
             </Row>
@@ -344,12 +336,12 @@ function App() {
             </iframe> 
         </Container>
         <Container className='background-space'></Container>
-        <WhatsAppButton phoneNumber="41987372059" />
         <footer className="bg-dark text-light py-3">
             <Container fluid>
                 <p className="text-center mb-0">© GB - Tecnologia - {new Date().getFullYear()}</p>
             </Container>
         </footer>
+        <WhatsAppButton phoneNumber="41987372059"/>
     </Container>
   );
 }
