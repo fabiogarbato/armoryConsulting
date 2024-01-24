@@ -44,91 +44,6 @@ const App = () => {
                 </Nav>
             </Navbar.Collapse>
         </Navbar>
-        <Container className='background-space'></Container>
-        <Container className='background-section2'>
-            <Row className="mb-3">
-                <Col xs={12} md={4} style={{ padding: 0, backgroundColor: 'purple', height: '40vh'}}>
-                    <Image
-                        className="d-block move"
-                        src={Arma2}
-                        alt="Primeiro slide"
-                        style={{
-                        width: '100%',        
-                        height: '40vh',       
-                        objectFit: 'cover', 
-                        objectPosition: 'center center' 
-                        }}
-                    />
-                </Col>
-                <Col xs={12} md={4} style={{ padding: 0, backgroundColor: 'white', height: '40vh'}}>
-                    <Image
-                        className="d-block move"
-                        src={Arma2}
-                        alt="Primeiro slide"
-                        style={{
-                        width: '100%',        
-                        height: '40vh',       
-                        objectFit: 'cover', 
-                        objectPosition: 'center center' 
-                        }}
-                    />
-                </Col>
-                <Col xs={12} md={4} style={{ padding: 0, backgroundColor: 'grey', height: '40vh'}}>
-                    <Image
-                        className="d-block move"
-                        src={Arma2}
-                        alt="Primeiro slide"
-                        style={{
-                        width: '100%',        
-                        height: '40vh',       
-                        objectFit: 'cover', 
-                        objectPosition: 'center center' 
-                        }}
-                    />
-                </Col>
-            </Row>
-            <Row>
-                <Col xs={12} md={4} style={{ padding: 0, backgroundColor: 'pink', height: '40vh'}}>
-                    <Image
-                        className="d-block move"
-                        src={Arma2}
-                        alt="Primeiro slide"
-                        style={{
-                        width: '100%',        
-                        height: '40vh',       
-                        objectFit: 'cover', 
-                        objectPosition: 'center center' 
-                        }}
-                    />           
-                </Col>
-                <Col xs={12} md={4} style={{ padding: 0, backgroundColor: 'blue', height: '40vh'}}>
-                    <Image
-                        className="d-block move"
-                        src={Arma2}
-                        alt="Primeiro slide"
-                        style={{
-                        width: '100%',        
-                        height: '40vh',       
-                        objectFit: 'cover', 
-                        objectPosition: 'center center' 
-                        }}
-                    />
-                </Col>
-                <Col xs={12} md={4} style={{ padding: 0, backgroundColor: 'orange', height: '40vh'}}>
-                    <Image
-                        className="d-block move"
-                        src={Arma2}
-                        alt="Primeiro slide"
-                        style={{
-                        width: '100%',        
-                        height: '40vh',       
-                        objectFit: 'cover', 
-                        objectPosition: 'center center' 
-                        }}
-                    />
-                </Col>
-            </Row>
-        </Container> 
         <Container id='sobre' className='background-space'></Container>
         <Container className='background-section2'>
             <Row className='h-100 d-flex justify-content-center align-items-center'>
@@ -336,53 +251,57 @@ const App = () => {
             </Row>
         </Container> */}
         <Container id='contato' className='background-space'></Container>
-        <Container className='background-contact'>
-            <Row className='h-100 d-flex justify-content-center align-items-center' /*style={{ backgroundColor: 'pink'}}*/>
-                <Col className='d-flex justify-content-center align-items-center'>
-                    <span className='text-first' style={{ color: '#f5ddba' }}>Redes Sociais</span>
-                </Col>
-            </Row>
-            <Row>
-                <Col xs={12} lg={6} className='d-flex justify-content-center align-items-center flex-column' style={{ /*backgroundColor: 'green',*/ height: '40vh'}}>
-                    <a href="https://www.facebook.com/armoryconsulting/" target="_blank" rel="noopener noreferrer">
-                        <Image
-                            className="d-block zoom-hover"
-                            src={Face}
-                            alt="Primeiro slide"
-                            style={{
-                            maxWidth: '100%',     
-                            maxHeight: '70vh',     
-                            objectFit: 'contain', 
-                            objectPosition: 'center center'
-                            }}
-                        />
-                    </a>
-                    <p className='text-before' style={{ color: '#f5ddba' }}>
-                        Armory Consulting
-                    </p>
-                </Col>
-                <Col xs={12} lg={6} className='d-flex justify-content-center align-items-center flex-column' style={{ /*backgroundColor: 'orange',*/ height: '40vh'}}>
-                    <a href="https://www.instagram.com/armoryconsulting/" target="_blank" rel="noopener noreferrer">
-                        <Image
-                            className="d-block zoom-hover"
-                            src={Insta}
-                            alt="Primeiro slide"
-                            style={{
+        <WithAnimation>
+            <Container className='background-contact'>
+                <Row className='h-100 d-flex justify-content-center align-items-center' /*style={{ backgroundColor: 'pink'}}*/>
+                    <WithAnimation>
+                        <Col className='d-flex justify-content-center align-items-center'>
+                            <span className='text-first' style={{ color: '#ff7300' }}>Redes Sociais</span>
+                        </Col>
+                    </WithAnimation>
+                </Row>
+                <Row>
+                    <Col xs={12} lg={6} className='d-flex justify-content-center align-items-center flex-column' style={{ /*backgroundColor: 'green',*/ height: '40vh'}}>
+                        <a href="https://www.facebook.com/armoryconsulting/" target="_blank" rel="noopener noreferrer">
+                            <Image
+                                className="d-block zoom-hover"
+                                src={Face}
+                                alt="Primeiro slide"
+                                style={{
                                 maxWidth: '100%',     
                                 maxHeight: '70vh',     
                                 objectFit: 'contain', 
                                 objectPosition: 'center center'
-                            }}
-                        />
-                    </a>
-                    <p className='text-before' style={{ color: '#f5ddba' }}>
-                        @armoryconsulting
-                    </p>
-                </Col>
-            </Row>
-        </Container>
+                                }}
+                            />
+                        </a>
+                        <p className='text-before' style={{ color: '#ff7300' }}>
+                            Armory Consulting
+                        </p>
+                    </Col>
+                    <Col xs={12} lg={6} className='d-flex justify-content-center align-items-center flex-column' style={{ /*backgroundColor: 'orange',*/ height: '40vh'}}>
+                        <a href="https://www.instagram.com/armoryconsulting/" target="_blank" rel="noopener noreferrer">
+                            <Image
+                                className="d-block zoom-hover"
+                                src={Insta}
+                                alt="Primeiro slide"
+                                style={{
+                                    maxWidth: '100%',     
+                                    maxHeight: '70vh',     
+                                    objectFit: 'contain', 
+                                    objectPosition: 'center center'
+                                }}
+                            />
+                        </a>
+                        <p className='text-before' style={{ color: '#ff7300' }}>
+                            @armoryconsulting
+                        </p>
+                    </Col>
+                </Row>
+            </Container>
+        </WithAnimation>
         <Container id='localizacao' className='background-space'></Container>
-        <Container id='cardapio' className='text-first background-cardapio' style={{ color: '#f5ddba' }}>Parceiros</Container>
+        <Container id='cardapio' className='text-first background-cardapio' style={{ color: '#ff7300' }}>Parceiros</Container>
         <Container className='background-maps'>
             <iframe
                 title="Google Maps"
@@ -398,7 +317,7 @@ const App = () => {
             </iframe> 
         </Container>
         <Container className='background-space'></Container>
-        <footer className="bg-dark text-light py-3">
+        <footer className="bg-black text-light py-3">
             <Container fluid>
                 <p className="text-center mb-0">© GB - Tecnologia - {new Date().getFullYear()}</p>
             </Container>
