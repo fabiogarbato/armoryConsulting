@@ -11,6 +11,7 @@ import OBelico from './images/Obelico.png';
 import Cabana from './images/logo-cabana.png';
 import Face from './images/face.png';
 import Insta from './images/insta.png';
+import VideoInstitucional from './video/institucional_video.mp4';
 import WithAnimation from './WithAnimation';
 
 const WhatsAppButton = ({ phoneNumber }) => {
@@ -156,7 +157,6 @@ const App = () => {
                     minWidth: '200px', 
                 }}
             className = 'rounded-pill custom-btn'
-            data-aos='fade-up'
             >
                 Conheça Nossa Estrutura
             </Button>
@@ -210,6 +210,19 @@ const App = () => {
                         </p>
                     </Col>
                 </Row>
+            </Container>
+        </WithAnimation>
+        <Container className='background-space'></Container>
+        <WithAnimation>
+            <Container className='background-video'>
+                <Row>
+                    <Col xs={12} lg={6} className='d-flex justify-content-center align-items-center flex-column'>
+                        <video width="100%" height="auto" controls>
+                            <source src={VideoInstitucional} type="video/mp4" />
+                            Seu navegador não suporta vídeos MP4.
+                        </video>
+                    </Col>
+                </Row>   
             </Container>
         </WithAnimation>
         <Container id='localizacao' className='background-space'></Container>
