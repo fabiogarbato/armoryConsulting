@@ -43,7 +43,7 @@ html, body {
   height: 1.5em; 
   vertical-align: middle;
   content: ""; 
-  background-color: #face8c; 
+  background-color: rgb(255, 115, 0); 
 }
 
 .background-section {
