@@ -1,6 +1,6 @@
 import './index.css';
 import './tabela.css';
-import {Container, Carousel, Row, Col, Image, Table, Button}  from 'react-bootstrap';
+import {Container, Row, Col, Image, Table, Button}  from 'react-bootstrap';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -34,13 +34,67 @@ const App = () => {
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="ms-auto">
-                    <Nav.Link href="#sobre" className="nav-link-hover" style={{ margin: '0 20px', fontSize: '40px', color: '#ff7300', fontFamily: 'Fira Sans Condensed , sans-serif', fontWeight: 900, fontStyle: 'italic'}}>  Sobre Nós  </Nav.Link>
-                    <Nav.Link href="#cardapio" className="nav-link-hover" style={{ margin: '0 20px', fontSize: '40px', color: '#ff7300', fontFamily: 'Fira Sans Condensed , sans-serif', fontWeight: 900, fontStyle: 'italic' }}>Cursos</Nav.Link>
+                    <Nav.Link href="#curso" className="nav-link-hover" style={{ margin: '0 20px', fontSize: '40px', color: '#ff7300', fontFamily: 'Fira Sans Condensed , sans-serif', fontWeight: 900, fontStyle: 'italic'}}>  Cursos  </Nav.Link>
+                    <Nav.Link href="#sobre" className="nav-link-hover" style={{ margin: '0 20px', fontSize: '40px', color: '#ff7300', fontFamily: 'Fira Sans Condensed , sans-serif', fontWeight: 900, fontStyle: 'italic' }}>Sobre Nós</Nav.Link>
                     <Nav.Link href="#contato" className="nav-link-hover" style={{ margin: '0 20px', fontSize: '40px', color: '#ff7300', fontFamily: 'Fira Sans Condensed , sans-serif', fontWeight: 900, fontStyle: 'italic' }}>Contato</Nav.Link>
                     <Nav.Link href="#localizacao" className="nav-link-hover" style={{ margin: '0 20px', fontSize: '40px', color: '#ff7300', fontFamily: 'Fira Sans Condensed , sans-serif', fontWeight: 900, fontStyle: 'italic' }}>Parceria</Nav.Link>
                 </Nav>
             </Navbar.Collapse>
         </Navbar>
+        <Container className='background-space'></Container>
+        <WithAnimation>
+            <Container id='curso' className='text-first background-cardapio' style={{ color: '#ff7300' }}>Nossos Cursos</Container>
+        </WithAnimation>
+        <WithAnimation>
+            <Container className="mt-3">
+                <div className="table-responsive">
+                    <Table className="custom-table">
+                        <thead>
+                            <tr>
+                                <th>Nível</th>
+                                <th>Descrição</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td className="nivel-cell">Básico</td>
+                                <td className="description-cell">Ideal para iniciantes acima de 18 anos, com baixa ou nenhuma experiência com armas de fogo. Optando por esporte ou defesa pessoal.</td>
+                            </tr>
+                            <tr>
+                                <td className="nivel-cell">Intermediário</td>
+                                <td className="description-cell">Para atiradores que já possuem um nível de conhecimento elevado de armas curtas. Querendo aprimorar seu aprendizado no emprego de armas portáteis.</td>
+                            </tr>
+                            <tr>
+                                <td className="nivel-cell">Avançado</td>
+                                <td className="description-cell">Treinamento tático para civil ou forças armadas. Abrangendo destreza, disciplina e técnicas avançadas de armas semi-automáticas e de repetição.</td>
+                            </tr>
+                            <tr>
+                                <td className="nivel-cell">Consultoria</td>
+                                <td className="description-cell">Iniciamos os trâmites no momento do aceite do cliente em adquirir uma arma de fogo, até sua conclusão final. Com seriedade e competência.</td>
+                            </tr>
+                        </tbody>
+                    </Table>
+                </div>
+            </Container>
+        </WithAnimation>
+        <WithAnimation>
+            <Container className='background-button d-flex justify-content-center align-items-center' style={{ minHeight: '10vh' }}>
+                <Button
+                    style={{
+                        backgroundColor: '#ff8c00',
+                        borderColor: 'black',
+                        borderRadius: '50px',
+                        boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
+                        fontSize: '20px', 
+                        padding: '15px 30px', 
+                        minWidth: '200px', 
+                    }}
+                className = 'rounded-pill custom-btn'
+                >
+                    Conheça Nossa Estrutura
+                </Button>
+            </Container>
+        </WithAnimation>
         <Container id='sobre' className='background-space'></Container>
         <Container className='background-section2'>
             <Row className='h-100 d-flex justify-content-center align-items-center'>
@@ -108,60 +162,6 @@ const App = () => {
                 </WithAnimation>
             </Row>
         </Container>
-        <Container id='cardapio' className='background-space'></Container>
-        <WithAnimation>
-            <Container id='cardapio' className='text-first background-cardapio' style={{ color: '#ff7300' }}>Nossos Cursos</Container>
-        </WithAnimation>
-        <WithAnimation>
-            <Container className="mt-3">
-                <div className="table-responsive">
-                    <Table className="custom-table">
-                        <thead>
-                            <tr>
-                                <th>Nível</th>
-                                <th>Descrição</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td className="nivel-cell">Básico</td>
-                                <td className="description-cell">Ideal para iniciantes acima de 18 anos, com baixa ou nenhuma experiência com armas de fogo. Optando por esporte ou defesa pessoal.</td>
-                            </tr>
-                            <tr>
-                                <td className="nivel-cell">Intermediário</td>
-                                <td className="description-cell">Para atiradores que já possuem um nível de conhecimento elevado de armas curtas. Querendo aprimorar seu aprendizado no emprego de armas portáteis.</td>
-                            </tr>
-                            <tr>
-                                <td className="nivel-cell">Avançado</td>
-                                <td className="description-cell">Treinamento tático para civil ou forças armadas. Abrangendo destreza, disciplina e técnicas avançadas de armas semi-automáticas e de repetição.</td>
-                            </tr>
-                            <tr>
-                                <td className="nivel-cell">Consultoria</td>
-                                <td className="description-cell">Iniciamos os trâmites no momento do aceite do cliente em adquirir uma arma de fogo, até sua conclusão final. Com seriedade e competência.</td>
-                            </tr>
-                        </tbody>
-                    </Table>
-                </div>
-            </Container>
-        </WithAnimation>
-        <WithAnimation>
-            <Container className='background-button d-flex justify-content-center align-items-center' style={{ minHeight: '10vh' }}>
-            <Button
-                style={{
-                    backgroundColor: '#ff8c00',
-                    borderColor: 'black',
-                    borderRadius: '50px',
-                    boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
-                    fontSize: '20px', 
-                    padding: '15px 30px', 
-                    minWidth: '200px', 
-                }}
-            className = 'rounded-pill custom-btn'
-            >
-                Conheça Nossa Estrutura
-            </Button>
-            </Container>
-        </WithAnimation>
         <Container id='contato' className='background-space'></Container>
         <WithAnimation>
             <Container className='background-contact'>
