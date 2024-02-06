@@ -5,7 +5,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import React from 'react';
-import { FaWhatsapp } from 'react-icons/fa';
+import { FaWhatsapp, FaArrowUp } from 'react-icons/fa';
 import logo from './images/logo.png';
 import OBelico from './images/Obelico.png';
 import Cabana from './images/logo-cabana.png';
@@ -23,11 +23,19 @@ const WhatsAppButton = ({ phoneNumber }) => {
     );
   };
 
+const ScrollToButton = ({ targetId }) => {
+    return (
+        <a href={`#${targetId}`} className="float-button">
+            <FaArrowUp />
+        </a>
+    );
+};
+
 const App = () => {  
 
   return (
     <Container fluid style={{ backgroundColor: '#2b2928', minHeight: '100vh' }}>
-        <Navbar bg="blue" expand="lg">
+        <Navbar id='inicio' bg="blue" expand="lg">
             <Navbar.Brand>
                 <Image src={logo} alt="Logo" style={{ maxWidth: '15vh', marginRight: '10px', marginLeft: '60px'}} />
             </Navbar.Brand>
@@ -281,6 +289,7 @@ const App = () => {
                 <p className="text-center mb-0">© GB - Tecnologia - {new Date().getFullYear()}</p>
             </Container>
         </footer>
+        <ScrollToButton targetId="inicio"/>
         <WhatsAppButton phoneNumber="41987372059"/>
     </Container>
   );
