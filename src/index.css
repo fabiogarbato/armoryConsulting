@@ -200,7 +200,6 @@ html, body {
   text-decoration: none; 
 }
 
-
 .move {
   transition: filter 0.3s ease-in-out, transform 0.3s ease-in-out;
   transform: scale(1); 
