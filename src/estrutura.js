@@ -102,7 +102,7 @@ function Estrutura() {
             <WithAnimation>
               <Image
                 className="d-block zoom-hover"
-                src={Humanoide1}
+                src={Humanoide2}
                 alt="Primeiro slide"
                 style={{
                 maxWidth: '100%',     
@@ -125,7 +125,7 @@ function Estrutura() {
             <WithAnimation>
               <Image
                 className="d-block zoom-hover"
-                src={Humanoide1}
+                src={Humanoide3}
                 alt="Primeiro slide"
                 style={{
                 maxWidth: '100%',     
@@ -148,7 +148,7 @@ function Estrutura() {
             <WithAnimation>
               <Image
                 className="d-block zoom-hover"
-                src={Humanoide1}
+                src={Humanoide4}
                 alt="Primeiro slide"
                 style={{
                 maxWidth: '100%',     
@@ -166,28 +166,6 @@ function Estrutura() {
           </Col>            
         </Row>   
         <Container id='sobre' className='background-space'></Container>                  
-        <Row>
-          <Col xs={12} md={6}>
-            <WithAnimation>
-              <Image
-                className="d-block zoom-hover"
-                src={Humanoide1}
-                alt="Primeiro slide"
-                style={{
-                maxWidth: '100%',     
-                maxHeight: '70vh',     
-                objectFit: 'contain', 
-                objectPosition: 'center center'
-                }}
-              />
-            </WithAnimation>
-          </Col>
-          <Col xs={12} md={6} className='text-container'>
-            <WithAnimation>
-              <span className='text-before' style={{ color: '#ff7300' }}>Visualização mais ampla na cadência de tiro</span>
-            </WithAnimation>
-          </Col>
-        </Row> 
       </Container>
       <Container id='sobre' className='background-space'></Container>
       <WithAnimation>
