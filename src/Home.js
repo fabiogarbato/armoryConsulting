@@ -15,14 +15,16 @@ import Insta from './images/insta.png';
 import VideoInstitucional from './video/institucional_video.mp4';
 import WithAnimation from './WithAnimation';
 
-const WhatsAppButton = ({ phoneNumber }) => {
-    const whatsappLink = `https://wa.me/55${phoneNumber}?text=Adorei%20seu%20artigo`;
+const WhatsAppButton = () => {
+    const phoneNumber = '41997388481';
+    const whatsappLink = `https://wa.me/55${phoneNumber}?text=Vim%20atrav%C3%A9s%20do%20site%2C%20e%20gostaria%20de%20conhecer%20mais%20sobre%20os%20cursos`;
+  
     return (
       <a href={whatsappLink} className="whatsapp-float" target="_blank" rel="noopener noreferrer">
         <FaWhatsapp />
       </a>
     );
-  };
+  };  
 
 const ScrollToButton = ({ targetId }) => {
     return (
